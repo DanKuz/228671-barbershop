@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Средства для ухода</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -23,6 +25,9 @@
 			</div>
 		</div>
 	</header>
+	
+	<main class="content">
+	    <div class="container">
 		<div class="index-content-main">
 			<h1 class="content-title">Средства для ухода</h1>
 				<ul class="breadcrumbs">
@@ -31,9 +36,10 @@
 					<li><span class="current-item">Средства для ухода</span></li>
 				</ul>
 		</div>
+		
 		<section class="left-column">
-			<h2 class="producers">Производители</h2>
-				<form action="#" method="post">
+            <form action="#" method="post">
+                <h2 class="producers">Производители</h2>
 					<ul>
 						<li><input type="checkbox" name="Baxter" checked><label for="Baxter">Baxter of California</label></li>
 						<li><input type="checkbox" name="Natty"><label for="Natty">Mr Natty</label></li>
@@ -51,8 +57,10 @@
 					<button type="submit">Показать</button>
 				</form>
 		</section>
+		
 		<section class="right-column clearfix">
 			<div class="goods">
+			
 				<article class="box">
 					<img src="img\kit-barber.jpg" width="220" height="170">
 						<h2>Набор для путешествий
@@ -113,13 +121,18 @@
 							</div>
 				</article>
 			</div>
-			<ul>
-				<li><a href="#1">1</a></li>
-				<li><a class="active">2</a></li>
-				<li><a href="#3">3</a></li>
-				<li><a href="#4">4</a></li>
-			</ul>
+			<div class="catalog-pages">
+                <ul>
+                    <li><a href="#1">1</a></li>
+                    <span class="catalog-pages-active">2</span>
+                    <li><a href="#3">3</a></li>
+                    <li><a href="#4">4</a></li>
+                </ul>
+			</div>
 		</section>
+   </div>
+    </main>
+    
 		<footer class="main-footer">
 		<div class="container clearfix">
 			<section class="footer-contacts">
