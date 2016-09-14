@@ -43,6 +43,7 @@ button {
 
 .main-header {
   background-color: #000;
+    font-size: 0;
 }
 
 .main-navigation {
@@ -66,6 +67,7 @@ button {
   display: block;
   padding: 25px 20px;
   color: #fff;
+    font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -73,6 +75,7 @@ button {
 .main-navigation a:hover {
     color: #fff;
     background: #242424;
+    box-shadow: inset 0px -3px 0 0 #fff;
 }
 
 .user-block {
@@ -96,6 +99,7 @@ button {
 
 .login:hover {
     background-color: #242424;
+    box-shadow: inset 0px -3px 0 0 #fff;
 }
 
 .login::before {
@@ -477,6 +481,11 @@ button {
 
 /* СТИЛИ ДЛЯ КАТАЛОГА */
 
+.main-navigation .active {
+    background: #242424;
+    box-shadow: inset 0px -3px 0 0 #fff;
+}
+
 .content {
     color: #000;
     background: #fff;
@@ -498,6 +507,7 @@ button {
 }
 
 .breadcrumbs li {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     margin-right: 40px;
@@ -511,6 +521,24 @@ button {
 
 .breadcrumbs li:last-child {
     color: #aba9a7;
+}
+
+.breadcrumbs li::after {
+    position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  display: block;
+  top: 9px;
+  margin-left: 42px;
+  width: 7px;
+  height: 7px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:last-child::after {
+    display: none;
 }
 
 .left-column h2 {
