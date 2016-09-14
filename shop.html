@@ -12,7 +12,7 @@
 		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
-					<li><a href="#">Главная</a></li>
+					<li><a href="main.html">Главная</a></li>
 					<li><a href="#">Информация</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Прайс-лист</a></li>
@@ -41,18 +41,19 @@
             <form action="#" method="post">
                 <h2 class="producers">Производители</h2>
 					<ul>
-						<li><input type="checkbox" name="Baxter" checked><label for="Baxter">Baxter of California</label></li>
-						<li><input type="checkbox" name="Natty"><label for="Natty">Mr Natty</label></li>
-						<li><input type="checkbox" name="Suavecito" checked><label for="Suavecito">Suavecito</label></li>
-						<li><input type="checkbox" name="Malin+Goets"><label for="Malin+Goets">Malin+Goets</label></li>
-						<li><input type="checkbox" name="Murray's"><label for="Murray's">Murray's</label></li>
-						<li><input type="checkbox" name="American Crew" checked><label for="American Crew">American Crew</label></li>
+						<li><input class="brands-cb" id="baxter" type="checkbox" name="brands" checked="">
+                <label for="baxter">Baxter of California</label></li>
+						<li><input class="brands-cb" id="natty" type="checkbox" name="Natty"><label for="natty">Mr Natty</label></li>
+						<li><input class="brands-cb" id="suavecito" type="checkbox" name="suavecito" checked><label for="suavecito">Suavecito</label></li>
+						<li><input class="brands-cb" id="malin+goets" type="checkbox" name="malin+goets"><label for="malin+goets">Malin+Goets</label></li>
+						<li><input class="brands-cb" id="murray's" type="checkbox" name="murray's"><label for="murray's">Murray's</label></li>
+						<li><input class="brands-cb" id="americancrew" type="checkbox" name="americancrew" checked><label for="americancrew">American Crew</label></li>
 					</ul>
 						<h2>Группы товаров</h2>
 					<ul>
-						<li><input type="checkbox" name="shaving cream accessories"><label for="shaving">Бритвенные принадлежности</label></li>
-						<li><input type="checkbox" name="cream" checked><label for="cream">Средства для ухода</label></li>
-						<li><input type="checkbox" name="accessories"><label for="accessories">Аксессуары</label></li>
+						<li><input class="type-goods" type="checkbox" id="shaving" name="shaving cream accessories"><label for="shaving">Бритвенные принадлежности</label></li>
+						<li><input class="type-goods" type="checkbox" id="cream" name="cream" checked><label for="cream">Средства для ухода</label></li>
+						<li><input class="type-goods" type="checkbox" id="accessories" name="accessories"><label for="accessories">Аксессуары</label></li>
 					</ul>
 					<button type="submit">Показать</button>
 				</form>

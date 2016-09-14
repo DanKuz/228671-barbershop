@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-barbershop";
+  src: url("../fonts/ptsansnarrow.woff") format("woff"),
+       url("../fonts/ptsansnarrow.woff2") format("woff2");
+}
+
 html,
 body {
   min-width: 960px;
@@ -525,12 +533,39 @@ button {
     display: none;
 }
 
-.left-column label::before {
-    position: absolute;
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.brands-cb:checked + label:before {
+    background-position: -4px -322px;
+}
+
+.brands-cb + label:before {
     content: "";
-    width: 20px;
-    height: 20px;
-    background: red;
-    top: 1px;
+    display: block;
+    position: absolute;
+    background: #fff url(../img/spritesheet.png) no-repeat left;
+    width: 25px;
+    height: 25px;
+    background-position: -4px -292px;
     left: 0;
+    top: 1px;
+}
+
+.type-goods:checked + label:before {
+    background-position: -4px -494px;
+}
+
+.type-goods + label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #fff url(../img/spritesheet.png) no-repeat left;
+    width: 25px;
+    height: 25px;
+    background-position: -4px -464px;
+    left: 0;
+    top: 1px;
 }
