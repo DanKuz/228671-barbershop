@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+figure {
+    line-height: 0;
+}
+
 button {
   font-family: "PT Sans Narrow", Arial, sans-serif;
 }
@@ -231,6 +235,10 @@ button {
     background-color: #000;
 }
 
+.index-content:last-child {
+    margin-bottom: 65px;
+}
+
 .index-content .btn {
   display: inline-block;
   margin-top: 33px;
@@ -367,11 +375,10 @@ button {
 }
 
 .main-footer {
-  margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
   color: #fff;
-  background: #252525 url("img/Layer23.png");
+  background: #252525 url("../img/Layer37.png");
 }
 
 .footer-contacts {
@@ -541,8 +548,14 @@ button {
     display: none;
 }
 
+.left-column {
+    float: left;
+    width: 170px;
+}
+
 .left-column h2 {
     text-transform: uppercase;
+    font-size: 24px;
 }
 
 .left-column ul {
@@ -552,9 +565,13 @@ button {
 
 .left-column li {
     position: relative;
-    padding-left: 25px;
+    padding-left: 45px;
     margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+.left-column li:hover {
+    background-color: #fff;
 }
 
 .left-column input {
@@ -580,6 +597,11 @@ input[type="checkbox"], input[type="radio"] {
     background-position: -4px -292px;
     left: 0;
     top: 1px;
+    cursor: pointer;
+}
+
+.type-goods:hover + label:hover {
+    background: url("../img/")
 }
 
 .type-goods:checked + label:before {
@@ -596,4 +618,158 @@ input[type="checkbox"], input[type="radio"] {
     background-position: -4px -464px;
     left: 0;
     top: 1px;
+    cursor: pointer;
+}
+
+.left-column button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 3px solid #000;
+}
+
+.left-column button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    transition: 
+        background-position 0.3s,
+        background-color 0.3s;
+}
+
+/* ПРАВАЯ КОЛОНКА */
+
+.right-column {
+    float: right;
+    margin-top: 20px;
+    width: 700px;
+}
+
+.goods {
+    font-size: 0;
+    margin-bottom: 31px;
+}
+
+.box {
+    font-family: 'PT Sans narrow', sans-serif, 'Arial';
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 220px;
+    min-height: 318px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    background-color: #f7f7f7;
+        box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+.box:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0, 1, 1, 0.4);
+}
+
+.box:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.box img {
+    width: 218px;
+    height: 169px;
+    margin-bottom: ;
+}
+
+.box h2 {
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.box .price {
+    text-align: center;
+}
+
+.price span {
+    width: 60px;
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #e5e5e5;
+    text-transform: uppercase;
+}
+
+.price a {
+    position: relative;
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid #000;
+}
+
+.price a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    transition: 
+        background-position 0.3s,
+        background-color 0.3s;
+}
+
+.catalog-pages a,
+.catalog-pages span {
+    font-family: "PT Sans Narrow", sans-serif, 'Arial';
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    margin-right: 5px;
+    background: #000;
+    color: #fff;
+    border: 3px solid #000;
+    margin-right: 10px;
+}
+
+.catalog-pages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog-pages li {
+    display: inline-block;
+}
+
+.catalog-pages {
+    font-size: 0;
+    margin-bottom: 40px;
+}
+
+.catalog-pages .active {
+    background: #fff;
+    color: #000;
+}
+
+.catalog-pages a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    transition: 
+        background-position 0.3s,
+        background-color 0.3s;
+}
+
+.catalog-pages a:active {
+    border-color: #ee3643;
 }
